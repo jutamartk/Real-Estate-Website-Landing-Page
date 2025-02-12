@@ -4,12 +4,13 @@ body {
     width: 100%;
     font-size: 18px;
     font-weight: 500;
-    color: white
+    color: white;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .first-session-style {
@@ -21,7 +22,6 @@ body {
 
 p {
     color: #c4c4c4;
-    line-height: 45px
 }
 
 h1 {
@@ -190,24 +190,32 @@ button:hover {
     height: 200px;
 }
 
-#third-session-style {
+.third-session-style {
+    width: 100%;
     background: #F6F6F6CC;
 }
 
 .two-column-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
     justify-content: space-between;
-    margin-left: 100px;
+    margin-left: 120px;
     margin-right: 100px;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 
+
+.two-column-grid p {
+    line-height: 45px
+}
+
+
 .three-column-grid {
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-left: 120px;
     /* justify-content: space-around; */
 }
 
@@ -219,11 +227,12 @@ button:hover {
     font-weight: 600
 }
 
-#third-session-style .three-column-grid p {
+
+.third-session-style .three-column-grid p {
     width: 370px;
     margin-bottom: 70px;
-    line-height: 50px;
     margin-top: 0;
+    line-height: 45px
 }
 
 .imgFrame {
@@ -233,9 +242,10 @@ button:hover {
     box-shadow: 0px 10px 15px 0px #97979714;
 }
 
+
 .fourth-session-style {
     background: white;
-    width: 100%;
+    max-width: 100%;
 }
 
 .rectangle {
@@ -262,25 +272,34 @@ button:hover {
 }
 
 .four-column-grid {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: start;
-    margin-left: 110px;
-    margin-right: 600px;
+    margin-left: 120px;
+    width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.fourth-session-style .four-column-grid h2#experienced {
+    color: #242527;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #242527;
+    font-size: 24px;
+    font-weight: 600
+}
+
 
 .fourth-session-style .four-column-grid p {
     margin-right: 100px;
     width: 270px;
     margin-top: 0;
+    line-height: 40px
 }
 
-.fourth-session-style .four-column-grid h3 {
-    color: #242527;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
 
 .fourth-session-style a {
     margin-left: 27px;
@@ -299,6 +318,10 @@ button:hover {
     box-shadow: 0px 10px 15px 0px #9797971f;
     rotate: y -180deg;
     object-fit: cover;
+}
+
+.topic {
+    margin-left: 120px;
 }
 
 /* Card container */
@@ -323,59 +346,68 @@ button:hover {
 .card-overlay {
     position: absolute;
     bottom: 0px;
-    left: 4px;
-    width: 250px;
+    left: 10px;
+    width: 253px;
     height: 88px;
     background: rgba(255, 255, 255, 0.9);
     transform: translateY(100%);
     transition: transform 0.3s ease;
-    padding: 10px;
-    padding-top: 15px;
-    padding-bottom: 20px;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Content inside the overlay */
-.card-content {
     display: grid;
     grid-template-columns: auto auto;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+.card-overlay h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: #242527;
     margin: 0;
 }
 
-.card-content h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #222;
+.card-overlay p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
-.card-content p {
-    margin: 5px 0 0;
-    font-size: 14px;
-    color: #666;
+.card-overlay div#space {
+    width: 140px;
+    height: 88px;
+    margin-right: 20px;
+    margin-top: 5px;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center
 }
 
 /* Action button (arrow) */
-.action-button {
+.card-overlay button {
     background: #1e73be;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-
+    width: 57px;
+    height: 57px;
     text-decoration: none;
     font-size: 18px;
+    padding: 0;
+
 }
 
 /* Hover effects */
 .card:hover .card-image {
     transform: scale(1.1);
-    /* Zoom image */
 }
 
 .card:hover .card-overlay {
     transform: translateY(0);
+    margin-bottom: 40px;
     /* Slide in overlay */
 }
 
