@@ -14,7 +14,7 @@ body {
 }
 
 .first-session-style {
-    background: linear-gradient(219.84deg, #474747 4.14%, #222222 44.22%);
+    background: linear-gradient(160deg, #474747 4.14%, #222222 44.22%);
     padding: 100px 0px 0px 100px;
     height: auto;
     font-size: 18px;
@@ -30,11 +30,22 @@ h1 {
     font-weight: 600;
 }
 
+h3 {
+    font-size: 18px;
+    color: #c4c4c4;
+}
+
+h4 {
+    font-size: 16px;
+    color: #242527;
+}
+
 #projectLogo {
     line-height: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 87px;
+    margin-right: 100px;
 }
 
 .first-session-style p {
@@ -96,32 +107,30 @@ h1 {
     line-height: 96px;
     letter-spacing: 0%;
     width: 654px;
+    margin-top: 36px;
+    margin-bottom: 24px;
 }
 
 .more-detail h3 {
-    font-size: 18px;
-    color: #c4c4c4;
     font-weight: 500;
     line-height: 40px;
-    margin-top: 20px;
     width: 100px;
-    letter-spacing: 0%;
 }
 
 .more-detail button {
-    width: Hug (196px)px;
-    height: Hug (64px)px;
+    /* width: Hug (196px)px; */
+    /* height: Hug (64px)px; */
     top: 629px;
     left: 120px;
     padding: 20px 40px 20px 40px;
     gap: 10px;
-    opacity: 0px;
+    /* opacity: 0px; */
     background: linear-gradient(97.65deg, #60BBEE 0.33%, #0A72AD 93.35%);
     box-shadow: 0px 10px 15px 0px rgba(1, 115, 153, 0.2);
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     border: 0cap;
 }
 
@@ -143,12 +152,12 @@ h1 {
     font-weight: 700;
     line-height: normal;
     color: white;
+    margin: 0px;
 }
 
 .grid-container h3 {
-    font-size: 18px;
-    color: #c4c4c4;
-    font-weight: 600
+    font-weight: 600;
+    margin: 0px;
 }
 
 .grid-container a {
@@ -157,7 +166,74 @@ h1 {
     font-weight: 700
 }
 
-button {
+
+.logo-session {
+    background: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.third-session-style {
+    width: 100%;
+    background: #F6F6F6CC;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-bottom: 65px;
+    margin-top: 74px;
+}
+
+
+.two-column-grid p {
+    line-height: 45px
+}
+
+
+.three-column-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 120px;
+}
+
+.three-column-grid h2 {
+    margin-top: 38px;
+    margin-bottom: 37px;
+    color: #242527;
+    font-size: 28px;
+    font-weight: 600
+}
+
+
+.third-session-style .three-column-grid p {
+    width: 370px;
+    margin-bottom: 70px;
+    margin-top: 0px;
+    line-height: 45px
+}
+
+.imgFrame {
+    border: 15px 0px 0px 0px;
+    border: 15px solid #FFFFFF;
+    object-fit: cover;
+    box-shadow: 0px 10px 15px 0px #97979714;
+}
+
+
+.fourth-session-style {
+    background: white;
+    width: 100%;
+}
+
+.fourth-session-style button {
     width: 181;
     height: 64;
     top: 3352px;
@@ -176,80 +252,12 @@ button {
     border: 0cap;
 }
 
-button:hover {
+.fourth-session-style button:hover {
     background: #0C8AC8;
     cursor: pointer;
 }
 
-.logo-session {
-    background: white;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    align-items: center;
-    justify-content: space-around;
-    height: 200px;
-}
-
-.third-session-style {
-    width: 100%;
-    background: #F6F6F6CC;
-}
-
-.two-column-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 120px;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-
-.two-column-grid p {
-    line-height: 45px
-}
-
-
-.three-column-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-left: 120px;
-    /* justify-content: space-around; */
-}
-
-.three-column-grid h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #242527;
-    font-size: 28px;
-    font-weight: 600
-}
-
-
-.third-session-style .three-column-grid p {
-    width: 370px;
-    margin-bottom: 70px;
-    margin-top: 0;
-    line-height: 45px
-}
-
-.imgFrame {
-    border: 15px 0px 0px 0px;
-    border: 15px solid #FFFFFF;
-    object-fit: cover;
-    box-shadow: 0px 10px 15px 0px #97979714;
-}
-
-
-.fourth-session-style {
-    background: white;
-    max-width: 100%;
-}
-
 .rectangle {
-    margin-top: 50px;
     height: 9px;
     width: 90px;
     background: linear-gradient(90deg, #60BBEE 11.67%, #2387C0 81.11%);
@@ -272,21 +280,17 @@ button:hover {
 }
 
 .four-column-grid {
-    width: 100%;
+    max-width: 900px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 320px);
     justify-content: start;
     margin-left: 120px;
-    width: 100%;
-    box-sizing: border-box;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .fourth-session-style .four-column-grid h2#experienced {
     color: #242527;
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #242527;
     font-size: 24px;
     font-weight: 600
@@ -324,7 +328,10 @@ button:hover {
     margin-left: 120px;
 }
 
-/* Card container */
+.news-and-update a {
+    color: #0A72AD;
+}
+
 .card {
     position: relative;
     width: 278px;
@@ -334,7 +341,6 @@ button:hover {
     margin: 20px;
 }
 
-/* Image */
 .card-image {
     width: 100%;
     height: 100%;
@@ -342,7 +348,6 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
-/* Overlay box */
 .card-overlay {
     position: absolute;
     bottom: 0px;
@@ -354,7 +359,7 @@ button:hover {
     transition: transform 0.3s ease;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, auto);
     margin-top: 5px;
     justify-content: center;
     align-items: center;
@@ -385,7 +390,6 @@ button:hover {
     align-content: center
 }
 
-/* Action button (arrow) */
 .card-overlay button {
     background: #1e73be;
     color: white;
@@ -397,10 +401,8 @@ button:hover {
     text-decoration: none;
     font-size: 18px;
     padding: 0;
-
 }
 
-/* Hover effects */
 .card:hover .card-image {
     transform: scale(1.1);
 }
@@ -408,12 +410,13 @@ button:hover {
 .card:hover .card-overlay {
     transform: translateY(0);
     margin-bottom: 40px;
-    /* Slide in overlay */
 }
 
 
 footer {
-    background: linear-gradient(219.84deg, #474747 4.14%, #222222 44.22%);
+    font-family: "DM Sans", serif;
+    color: white;
+    background: linear-gradient(160deg, #474747 4.14%, #222222 44.22%);
     box-shadow: 0px 10px 15px 0px #9797971F;
     width: 100%;
     height: 477px;
@@ -421,4 +424,35 @@ footer {
     left: 1440px;
     display: grid;
     grid-template-columns: auto auto auto;
+}
+
+footer h4 {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+footer a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    margin-bottom: 25px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 33px;
 }
